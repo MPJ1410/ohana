@@ -1,35 +1,35 @@
 // ===== PRODUCT DATA =====
 const products = [
-  { id:1, category:'tortas', emoji:'🎂', bg:'linear-gradient(135deg,#fce7f3,#ede9fe)', name:'Torta Unicornio', badge:'Tortas', desc:'Diseño mágico con colores pastel, cuerno dorado y flores de fondant. Perfecta para cumpleaños de princesas.', price:'Desde S/. 120', theme:'🦄 Temática Unicornio' },
-  { id:2, category:'cupcakes', emoji:'🧁', bg:'linear-gradient(135deg,#fef3c7,#fce7f3)', name:'Bouquet de Cupcakes', badge:'Cupcakes', desc:'Arreglo de 6 o 12 cupcakes decorados como un ramo de flores. Ideal para regalar en cualquier ocasión.', price:'Desde S/. 55', theme:'🌸 Bouquet Floral' },
-  { id:3, category:'bento', emoji:'🍰', bg:'linear-gradient(135deg,#d1fae5,#fce7f3)', name:'Bento Cake', badge:'Bento', desc:'Mini torta individual en cajita especial con mensaje personalizado. Tendencia coreana perfecta para detalles únicos.', price:'Desde S/. 35', theme:'💌 Mensaje Personalizado' },
-  { id:4, category:'tortas', emoji:'👰', bg:'linear-gradient(135deg,#fff7ed,#fce7f3)', name:'Torta de Bodas', badge:'Tortas', desc:'Tortas elegantes de 2 o 3 pisos con flores y acabados en fondant premium. Tu día especial merece lo mejor.', price:'Desde S/. 250', theme:'💍 Bodas & Aniversarios' },
-  { id:5, category:'tortas', emoji:'🍼', bg:'linear-gradient(135deg,#dbeafe,#fce7f3)', name:'Baby Shower', badge:'Tortas', desc:'Diseños tiernos con animalitos (jirafa, osito, elefante) en colores suaves. Para dar la bienvenida al nuevo bebé.', price:'Desde S/. 110', theme:'🐣 Baby Shower' },
-  { id:6, category:'tortas', emoji:'🧜', bg:'linear-gradient(135deg,#ccfbf1,#ede9fe)', name:'Torta Sirenita', badge:'Tortas', desc:'Cola de sirena, escamas oceánicas y decoraciones marinas. Colores teal y morado que enamorarán.', price:'Desde S/. 130', theme:'🌊 Temática Marina' },
-  { id:7, category:'especiales', emoji:'💝', bg:'linear-gradient(135deg,#fce7f3,#fef08a)', name:'Caja San Valentín', badge:'Especiales', desc:'Caja temática con cupcakes corazón, chocolates y detalles personalizados. La forma perfecta de decir "te amo".', price:'Desde S/. 65', theme:'❤️ San Valentín' },
-  { id:8, category:'cupcakes', emoji:'🦋', bg:'linear-gradient(135deg,#ede9fe,#fce7f3)', name:'Cupcakes Mariposas', badge:'Cupcakes', desc:'Cupcakes decorados con mariposas comestibles, flores y glitter. Presentación elegante en caja de 4 o 6 unidades.', price:'Desde S/. 45', theme:'🌸 Mariposas & Flores' },
-  { id:9, category:'especiales', emoji:'👸', bg:'linear-gradient(135deg,#fef3c7,#ede9fe)', name:'Quinceaños', badge:'Especiales', desc:'Tortas de 3 pisos con corona, flores y nombre en letras doradas. Diseño elegante para el momento más especial.', price:'Desde S/. 300', theme:'👑 Quinceaños' }
+  { id:1, category:'tortas', img:'images/cake-unicorn.png', name:'Torta Unicornio', badge:'Tortas', desc:'Diseño mágico con colores pastel, cuerno dorado y flores de fondant. Perfecta para cumpleaños de princesas.', price:'S/120.00', theme:'🦄 Temática Unicornio' },
+  { id:2, category:'cupcakes', img:'images/cupcakes-bouquet.png', name:'Bouquet de Cupcakes', badge:'Cupcakes', desc:'Arreglo de 6 o 12 cupcakes decorados como un ramo de flores. Ideal para regalar en cualquier ocasión.', price:'S/55.00', theme:'🌸 Bouquet Floral' },
+  { id:3, category:'bento', img:'images/bento-cake.png', name:'Bento Cake', badge:'Bento', desc:'Mini torta individual en cajita especial con mensaje personalizado. Tendencia coreana perfecta para detalles únicos.', price:'S/35.00', theme:'💌 Mensaje Personalizado' },
+  { id:4, category:'tortas', img:'images/wedding-cake.png', name:'Torta de Bodas', badge:'Tortas', desc:'Tortas elegantes de 2 o 3 pisos con flores y acabados en fondant premium. Tu día especial merece lo mejor.', price:'S/250.00', theme:'💍 Bodas & Aniversarios' },
+  { id:5, category:'tortas', img:'images/baby-shower-cake.png', name:'Baby Shower', badge:'Tortas', desc:'Diseños tiernos con animalitos en colores suaves. Para dar la bienvenida al nuevo bebé.', price:'S/110.00', theme:'🐣 Baby Shower' },
+  { id:6, category:'tortas', img:'images/mermaid-cake.png', name:'Torta Sirenita', badge:'Tortas', desc:'Cola de sirena, escamas oceánicas y decoraciones marinas. Colores teal y morado que enamorarán.', price:'S/130.00', theme:'🌊 Temática Marina' },
+  { id:7, category:'especiales', img:'images/valentine-box.png', name:'Caja San Valentín', badge:'Especiales', desc:'Caja temática con cupcakes corazón, chocolates y detalles personalizados. La forma perfecta de decir "te amo".', price:'S/65.00', theme:'❤️ San Valentín' },
+  { id:8, category:'cupcakes', img:'images/butterfly-cupcakes.png', name:'Cupcakes Mariposas', badge:'Cupcakes', desc:'Cupcakes decorados con mariposas comestibles, flores y glitter. Presentación elegante en caja.', price:'S/45.00', theme:'🌸 Mariposas & Flores' },
+  { id:9, category:'especiales', img:'images/quinceanera-cake.png', name:'Quinceaños', badge:'Especiales', desc:'Tortas de 3 pisos con corona, flores y nombre en letras doradas. Diseño elegante para el momento más especial.', price:'S/300.00', theme:'👑 Quinceaños' }
 ];
 
 // ===== GALLERY DATA =====
 const galleryItems = [
-  { emoji:'🎂', bg:'linear-gradient(135deg,#fce7f3,#f9a8c3)', label:'Torta de cumpleaños', span:'span-2' },
-  { emoji:'🧁', bg:'linear-gradient(135deg,#fef3c7,#fce7f3)', label:'Cupcakes artesanales', span:'' },
-  { emoji:'🍰', bg:'linear-gradient(135deg,#d1fae5,#a7f3d0)', label:'Bento cake personalizado', span:'span-row' },
-  { emoji:'🦄', bg:'linear-gradient(135deg,#ede9fe,#c4b5fd)', label:'Torta temática unicornio', span:'' },
-  { emoji:'💐', bg:'linear-gradient(135deg,#fce7f3,#fbcfe8)', label:'Bouquet de cupcakes', span:'' },
-  { emoji:'👰', bg:'linear-gradient(135deg,#fff7ed,#fed7aa)', label:'Torta de bodas', span:'span-2' },
-  { emoji:'🧜', bg:'linear-gradient(135deg,#ccfbf1,#99f6e4)', label:'Torta sirenita', span:'' },
-  { emoji:'💝', bg:'linear-gradient(135deg,#fce7f3,#fda4af)', label:'Detalles San Valentín', span:'' },
+  { img:'images/cake-unicorn.png', label:'Torta Unicornio', span:'span-2' },
+  { img:'images/cupcakes-bouquet.png', label:'Cupcakes artesanales', span:'' },
+  { img:'images/bento-cake.png', label:'Bento cake personalizado', span:'span-row' },
+  { img:'images/mermaid-cake.png', label:'Torta temática sirenita', span:'' },
+  { img:'images/valentine-box.png', label:'Caja San Valentín', span:'' },
+  { img:'images/wedding-cake.png', label:'Torta de bodas', span:'span-2' },
+  { img:'images/baby-shower-cake.png', label:'Torta Baby Shower', span:'' },
+  { img:'images/quinceanera-cake.png', label:'Torta Quinceaños', span:'' },
 ];
 
 // ===== TESTIMONIALS DATA =====
 const testimonials = [
-  { stars:'⭐⭐⭐⭐⭐', text:'"La torta de cumpleaños de mi hija quedó HERMOSA. El diseño de unicornio superó todas mis expectativas. ¡Además estaba deliciosa! 100% recomendadas."', avatar:'👩', name:'Carla M.', event:'Cumpleaños infantil' },
-  { stars:'⭐⭐⭐⭐⭐', text:'"Pedí un bouquet de cupcakes para mi mamá y lloró de la emoción. La presentación era preciosa y el sabor increíble. OHANA hace magia con cada detalle."', avatar:'👨', name:'Diego P.', event:'Día de la Madre' },
-  { stars:'⭐⭐⭐⭐⭐', text:'"Mi torta de bodas fue un sueño hecho realidad. María y Roxana entendieron exactamente lo que quería. Todos los invitados preguntaron dónde la había pedido."', avatar:'👰', name:'Lucía & Carlos', event:'Boda' },
-  { stars:'⭐⭐⭐⭐⭐', text:'"Los bento cakes son el mejor regalo que existe. Pedí 10 para mis compañeras de trabajo y todas quedaron encantadas. Super prácticos y hermosos."', avatar:'👩‍💼', name:'Fernanda R.', event:'Detalle corporativo' },
-  { stars:'⭐⭐⭐⭐⭐', text:'"Para el baby shower de mi hermana pedimos una torta de jirafita bebé y cupcakes a juego. ¡Todo perfecto! La atención por WhatsApp fue rapidísima."', avatar:'🤰', name:'Valeria G.', event:'Baby Shower' },
+  { stars:'★★★★★', text:'"La torta de cumpleaños de mi hija quedó HERMOSA. El diseño de unicornio superó todas mis expectativas. ¡Además estaba deliciosa! 100% recomendadas."', avatar:'👩', name:'Carla M.', event:'Cumpleaños infantil' },
+  { stars:'★★★★★', text:'"Pedí un bouquet de cupcakes para mi mamá y lloró de la emoción. La presentación era preciosa y el sabor increíble. OHANA hace magia con cada detalle."', avatar:'👨', name:'Diego P.', event:'Día de la Madre' },
+  { stars:'★★★★★', text:'"Mi torta de bodas fue un sueño hecho realidad. María y Roxana entendieron exactamente lo que quería. Todos los invitados preguntaron dónde la había pedido."', avatar:'👰', name:'Lucía & Carlos', event:'Boda' },
+  { stars:'★★★★★', text:'"Los bento cakes son el mejor regalo que existe. Pedí 10 para mis compañeras de trabajo y todas quedaron encantadas. Super prácticos y hermosos."', avatar:'👩‍💼', name:'Fernanda R.', event:'Detalle corporativo' },
+  { stars:'★★★★★', text:'"Para el baby shower de mi hermana pedimos una torta de jirafita bebé y cupcakes a juego. ¡Todo perfecto! La atención por WhatsApp fue rapidísima."', avatar:'🤰', name:'Valeria G.', event:'Baby Shower' },
 ];
 
 // ===== FAQ DATA =====
@@ -53,8 +53,8 @@ function renderProducts(filter = 'all') {
     card.className = 'product-card reveal';
     card.style.transitionDelay = `${i * 0.08}s`;
     card.innerHTML = `
-      <div class="card-img" style="background:${p.bg}">
-        <span style="filter:drop-shadow(0 4px 12px rgba(0,0,0,.15))">${p.emoji}</span>
+      <div class="card-img">
+        <img src="${p.img}" alt="${p.name}" loading="lazy" />
       </div>
       <div class="card-body">
         <span class="card-badge">${p.badge}</span>
@@ -79,9 +79,8 @@ function renderGallery() {
   galleryItems.forEach(item => {
     const div = document.createElement('div');
     div.className = `gallery-item ${item.span} reveal`;
-    div.style.background = item.bg;
     div.innerHTML = `
-      <span class="gallery-emoji">${item.emoji}</span>
+      <img src="${item.img}" alt="${item.label}" loading="lazy" />
       <div class="gallery-overlay"><span>${item.label}</span></div>`;
     grid.appendChild(div);
   });
@@ -109,7 +108,6 @@ function renderTestimonials() {
     });
     dots.appendChild(dot);
   });
-  // Update dots on scroll
   slider.addEventListener('scroll', () => {
     const scrollLeft = slider.scrollLeft;
     const cards = slider.querySelectorAll('.testimonial-card');
@@ -142,23 +140,6 @@ function renderFAQ() {
   });
 }
 
-// ===== ANIMATED COUNTERS =====
-function animateCounters() {
-  const counters = document.querySelectorAll('[data-count]');
-  counters.forEach(el => {
-    const target = parseInt(el.getAttribute('data-count'));
-    const prefix = target === 500 ? '+' : '';
-    const suffix = target === 100 ? '%' : '';
-    let current = 0;
-    const step = Math.max(1, Math.floor(target / 60));
-    const timer = setInterval(() => {
-      current += step;
-      if (current >= target) { current = target; clearInterval(timer); }
-      el.textContent = prefix + current + suffix;
-    }, 25);
-  });
-}
-
 // ===== FILTER BUTTONS =====
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -177,36 +158,25 @@ function observeReveal() {
   document.querySelectorAll('.reveal:not(.visible)').forEach(el => observer.observe(el));
 }
 
-// ===== COUNTER OBSERVER =====
-let countersAnimated = false;
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting && !countersAnimated) {
-      countersAnimated = true;
-      animateCounters();
-    }
-  });
-}, { threshold: 0.5 });
-
-// ===== NAVBAR SCROLL + PROMO BANNER =====
+// ===== NAVBAR SCROLL =====
 const navbar = document.getElementById('navbar');
-const promoBanner = document.getElementById('promoBanner');
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 
 window.addEventListener('scroll', () => {
   const y = window.scrollY;
-  const bannerH = promoBanner ? promoBanner.offsetHeight : 0;
-  if (y > bannerH) {
-    navbar.classList.add('scrolled');
-    if (promoBanner) promoBanner.style.transform = `translateY(-${bannerH}px)`;
-    navbar.style.top = '0';
-  } else {
-    navbar.classList.remove('scrolled');
-    if (promoBanner) promoBanner.style.transform = 'translateY(0)';
-    navbar.style.top = bannerH + 'px';
-  }
-  // Scroll to top button
+  navbar.classList.toggle('scrolled', y > 60);
   scrollTopBtn.classList.toggle('visible', y > 500);
+
+  // Active nav link highlight
+  const sections = document.querySelectorAll('section[id]');
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (y >= sectionTop) current = section.getAttribute('id');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
 });
 
 // ===== SCROLL TO TOP =====
@@ -225,11 +195,12 @@ document.querySelectorAll('.nav-links a').forEach(a => {
 // ===== CONTACT FORM =====
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
-  const nombre  = document.getElementById('nombre').value.trim();
+  const nombre   = document.getElementById('nombre').value.trim();
   const telefono = document.getElementById('telefono').value.trim();
-  const evento  = document.getElementById('evento').value;
-  const mensaje = document.getElementById('mensaje').value.trim();
-  const text = `Hola OHANA! 🎂\n\n*Nombre:* ${nombre}\n*Teléfono:* ${telefono || 'No indicado'}\n*Evento:* ${evento || 'No especificado'}\n*Pedido:* ${mensaje || 'Sin descripción'}\n\n¡Me gustaría hacer un pedido! 🌸`;
+  const evento   = document.getElementById('evento').value;
+  const producto = document.getElementById('producto').value;
+  const mensaje  = document.getElementById('mensaje').value.trim();
+  const text = `Hola OHANA! 🎂\n\n*Nombre:* ${nombre}\n*Teléfono:* ${telefono || 'No indicado'}\n*Evento:* ${evento || 'No especificado'}\n*Producto:* ${producto || 'No especificado'}\n*Pedido:* ${mensaje || 'Sin descripción'}\n\n¡Me gustaría hacer un pedido! 🌸`;
   const waUrl = `https://wa.me/51936402153?text=${encodeURIComponent(text)}`;
   const btn = document.getElementById('submitBtn');
   btn.textContent = '¡Abriendo WhatsApp...';
@@ -258,13 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     observeReveal();
-    // Observe steps & values
-    document.querySelectorAll('.step-card, .value-item, .about-svg-card, .gallery-item, .faq-item').forEach(el => {
+    document.querySelectorAll('.step-card, .value-card, .about-image, .about-text, .gallery-item, .faq-item').forEach(el => {
       if (!el.classList.contains('reveal')) el.classList.add('reveal');
       observer.observe(el);
     });
-    // Counter observer
-    const statsEl = document.querySelector('.hero-stats');
-    if (statsEl) counterObserver.observe(statsEl);
   }, 100);
 });
